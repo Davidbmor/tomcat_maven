@@ -42,8 +42,11 @@ sudo cp /vagrant/settings.xml  /etc/maven/settings.xml
 
 #Creamos una carmeta para la aplicacion
 sudo mkdir app
+
 #Desplegamos la palicacion
 sudo mvn archetype:generate -e -DgroupId=org.zaidinvergeles -DartifactId=tomcat-war -DarchetypeArtifactId=maven-archetype-webapp  -DinteractiveMode=false
 
+#Damos permisos a la carpeta 
+sudo chown -R vagrant:vagrant /home/vagrant/app/tomcat-war
 
 sudo cp /vagrant/pom.xml  app/tomcat-war/pom.xml
