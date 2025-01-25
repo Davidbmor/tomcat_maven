@@ -1,5 +1,4 @@
 
-
 # Actualizar los paquetes e instalar OpenJDK
 sudo apt update
 sudo apt upgrade 
