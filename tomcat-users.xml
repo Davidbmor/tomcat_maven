@@ -7,10 +7,6 @@
   <role rolename="manager" />
   <role rolename="manager-script" />
   <role rolename="manager-gui" />
-  <user username="alumno"
-    password="1234"
-    roles="admin,admin-gui,manager,manager-gui" />
-
-  <user username="david" password="1234" roles="manager-script" />
-
+  <role rolename="manager-status" />
+  <user username="alumno" password="1234" roles="manager-script,manager-gui" />
 </tomcat-users>
